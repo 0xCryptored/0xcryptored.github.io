@@ -1,10 +1,10 @@
 /* to help me remember the values and keep armony along the different pages.
 COLOR PALETTE:
-         GRIS: #4F4F51 / rgba(79,79,81,1.000)   -Para el fondo
-      BLANCO: #D6D6D6 / rgba(214,214,214,1.000) -Titulos grandes
-      NEGRO: #2C2B30 / rgba(44,43,48,1.000)  -Bordes
-      ROSA: #F2C4CE / rgba(242,196,206,1.000)  -Detalles2
-TANGERINE: #F58F7C / rgba(245,143,124,1.000)   -Detalles3
+    GRIS: #4F4F51 / rgba(79,79,81,1.000)   -Para el fondo
+    BLANCO: #D6D6D6 / rgba(214,214,214,1.000) -Titulos grandes
+    NEGRO: #2C2B30 / rgba(44,43,48,1.000)  -Bordes
+    ROSA: #F2C4CE / rgba(242,196,206,1.000)  -Detalles2
+    TANGERINE: #F58F7C / rgba(245,143,124,1.000)   -Detalles3
 */
 
 nav .navbar-brand
@@ -19,7 +19,7 @@ nav .navbar-brand
 }
 body
 {
-    background-image: linear-gradient(rgba(79,79,81,1.000),rgba(12,3,51,0.3));
+    background-image: linear-gradient(rgba(79,79,81,1.000))
 }
 footer
 {
