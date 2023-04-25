@@ -171,7 +171,7 @@ font-size: 60px;
 text-align: center;
 }
 #alert {
-display: inline-block;
+display: none;
 margin: 0 auto;
 width: 100%;
 height: auto;
