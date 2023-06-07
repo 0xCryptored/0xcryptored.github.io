@@ -6,25 +6,42 @@ COLOR PALETTE:
     ROSA: #F2C4CE / rgba(242,196,206,1.000)  -Detalles2
     TANGERINE: #F58F7C / rgba(245,143,124,1.000)   -Detalles3
 */
-
-nav .navbar-brand
-{
-    font-size: xx-large;
+body{
+    background-color: #121212;
 }
-.title
-{
-    color: #D6D6D6;
-    text-shadow: 2px 2px 5px #2C2B30;
+/* Top Header*/
+header{
+    padding: 100px;
+    height: 100%;
+    border: 1px solid white;
+}
+header h1{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 200px;
+    width: 100%;
+    color: white;
     text-align: center;
+    font-size: 50px;
+    border: 1px solid white;
 }
-body
-{
-    background-image: linear-gradient(rgba(79,79,81,1.000))
+header h1 span{
+    color: rgb(19, 74, 255);
 }
-footer
-{
-    background-color: #4F4F51;
+header button{
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: 8px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+header button:hover{
     color: black;
-    font-size: 17px;
+    background-color: white;
 }
 
