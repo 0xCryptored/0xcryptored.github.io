@@ -44,4 +44,21 @@ header button:hover{
     color: black;
     background-color: white;
 }
-
+/* NAVBAR */
+nav{
+    background-color: rgb(3, 1, 24);
+}
+.main-nav{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+}
+.main-nav li{
+    display: inline-block;
+    font-size: 25px;
+}
+.main-nav a{
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer;
+}
