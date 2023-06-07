@@ -124,6 +124,9 @@ footer{
     border-radius: 32px;
     left: 90px;
 }
+.container-output img{
+    left: 200px;
+}
 #output-text{
     display: inline-block;
     position: relative;
