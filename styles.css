@@ -13,17 +13,16 @@ body{
 header{
     padding: 100px;
     height: 100%;
-    border: 1px solid white;
 }
 header h1{
     display: inline-block;
     vertical-align: middle;
     margin-top: 200px;
+    margin-bottom: 45px;
     width: 100%;
     color: white;
     text-align: center;
     font-size: 50px;
-    border: 1px solid white;
 }
 header h1 span{
     color: rgb(19, 74, 255);
@@ -46,19 +45,39 @@ header button:hover{
 }
 /* NAVBAR */
 nav{
-    background-color: rgb(3, 1, 24);
+    display: block;
+    width: 100%;
+    background-color: rgba(13, 30, 41, 0.747);
+    border-bottom: 3px solid rgb(7, 7, 218);
 }
-.main-nav{
+.list-nav{
     display: inline-block;
+    vertical-align: middle;
     list-style-type: none;
+    width: fit-content;
     color: white;
 }
-.main-nav li{
+.list-nav li{
     display: inline-block;
+    margin: 10px 7px;
     font-size: 25px;
 }
-.main-nav a{
+.list-nav a{
     text-decoration: none;
     color: inherit; 
     cursor: pointer;
+}
+/* CONTENT ABOUT */
+#about{
+    background-color: aliceblue;
+    border: 1px solid rgb(255, 244, 87);
+}
+#about h1{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: rgb(24, 23, 23);
+    font-size: 40px;
+    padding: 0;
+    border: 1px solid red;
 }
