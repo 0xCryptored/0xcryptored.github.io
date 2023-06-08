@@ -67,17 +67,60 @@ nav{
     color: inherit; 
     cursor: pointer;
 }
-/* CONTENT ABOUT */
+/* === CONTENT ABOUT === */
 #about{
     background-color: aliceblue;
     border: 1px solid rgb(255, 244, 87);
 }
-#about h1{
+.title{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: rgb(24, 23, 23);
+    font-size: 25px;
+    border: 1px solid red;
+}
+.slide-bar {
+    margin: 1px auto;
+    width: 6%;
+    border-bottom: 3px solid black;
+}
+  /* === CARDS === */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgb(240, 5, 240);
+}
+.card{
+    width: 20%;
+    margin: 5px 10px;
+    border: 1px solid aqua;
+}
+.card ul{
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+.card li{
+    word-wrap: break-word;
+}
+/* === PROFILE === */
+
+
+/* === CONTENT PORTFOLIO === */
+#projects{
+    background-color: rgb(172, 176, 180);
+    border: 1px solid rgb(255, 244, 87);
+}
+#projects h1{
     display: inline-block;
     text-align: center;
     width: 100%;
     color: rgb(24, 23, 23);
     font-size: 40px;
-    padding: 0;
     border: 1px solid red;
 }
