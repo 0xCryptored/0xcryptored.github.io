@@ -56,7 +56,7 @@ header button{
     transition-duration: 0.5s;
 }
 header button:hover{
-    color: black;
+    color: #121212;
     background-color: white;
 }
 /* NAVBAR */
@@ -103,13 +103,14 @@ nav{
     text-align: center;
     width: 100%;
     height: fit-content;
+    margin-top: 80px;
     margin-bottom: 2px;
-    color: rgb(24, 23, 23);
-    font-size: 25px;
+    color: #121212;
+    font-size: 40px;
 }
 .slide-bar {
     margin: 1px auto;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     width: 6%;
     border-bottom: 3px solid #153EC5;
 }
@@ -133,27 +134,30 @@ nav{
 }
 .card li{
     word-wrap: break-word;
+    font-size: 18px;
 }
 .img-about{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 /* === PROFILE === */
+.container-profile{
+    display: flex;
+    margin: 50px auto 0px auto;
+    width: 90%;
+}
 .img-pfp{
-    width: 400px;
+    width: 280px;
     height: auto;
     margin: auto;
 }
 .img-skill{
     position: relative;
+    width: 280px;
     bottom: 3.5em;
+    right: 60px;
     height: auto;
     margin: auto;
-}
-.container-profile{
-    display: flex;
-    margin: auto;
-    width: 90%;
 }
 .me{
     display: flex;
@@ -180,8 +184,64 @@ nav{
 #projects{
     margin-top: 0px;
     background-color: #c6c6c9;
+}
+.container-projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid purple
+}
+.procard{
+    display: flex;
+    border: 1px solid rgb(0, 128, 0)
+}
+/* === CONTENT CONTACT === */
+#contact{
+    margin-top: 0px;
+    background-color: #121212;
     border: 2px solid blue;
 }
+.title-contact{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 2px;
+    color: #E4E5EA;
+    font-size: 40px;
+}
+.slide-bar-contact{
+    margin: 1px auto;
+    margin-bottom: 60px;
+    width: 6%;
+    border-bottom: 3px solid #ccd1e0;
+}
 
-
-/* === CONTENT CONTACT === */
+.container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgb(128, 0, 0)
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    color: #153EC5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    color: #153EC5;
+}
+.social{
+    color: white;
+}
