@@ -111,7 +111,7 @@ nav{
     width: 90%;
 }
 .card{
-    width: 20%;
+    width: fit-content;
 }
 .card ul{
     list-style-type: none;
@@ -129,13 +129,14 @@ nav{
 /* === PROFILE === */
 .container-profile{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 50px auto 0px auto;
     width: 90%;
 }
 .img-pfp{
     width: 280px;
     height: auto;
-    margin: auto;
 }
 .img-skill{
     position: relative;
@@ -148,6 +149,7 @@ nav{
 .me{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     margin: 10px 100px;
@@ -251,5 +253,22 @@ form{
     .card{
         width: auto;
         
+    }
+    .container-projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border: 1px solid purple
+    }
+    .procard{
+        display: flex;
+        border: 1px solid rgb(0, 128, 0)
+    }
+    .procard img{
+        width: 350px;
     }
 }
