@@ -2,12 +2,15 @@
 COLOR PALETTE:
     GRIS: #c6c6c9 
     BLANCO: #E4E5EA 
-    NEGRO: #121212
+    NEGRO: #252934
     AZUL: #6B99C3 
     STRONG BLUE: #153EC5 
 */
+
 body{
     background-color: #121212;
+    margin: 0;
+    padding: 0;
 } 
 /* Top Header*/
 header{
@@ -37,7 +40,8 @@ header button{
     padding: 1rem;
     font-size: 1.5rem;
     color: #E4E5EA;
-    border: 1px solid #E4E5EA;
+    border: 2.5px solid #E4E5EA;
+    border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -98,7 +102,7 @@ nav{
 .slide-bar {
     margin: 1px auto;
     margin-bottom: 60px;
-    width: 6%;
+    width: 10%;
     border-bottom: 3px solid #153EC5;
 }
   /* === CARDS === */
@@ -171,6 +175,7 @@ nav{
 /* === CONTENT PORTFOLIO === */
 #projects{
     margin-top: 0px;
+    padding-bottom: 5rem;
     background-color: #c6c6c9;
 }
 .container-projects{
@@ -189,27 +194,26 @@ nav{
 }
 /* === CONTENT CONTACT === */
 #contact{
-    margin-top: 0px;
-    background-color: #121212;
-    border: 2px solid blue;
+    padding: 1rem;
+    background-color: #252934;
 }
 .title-contact{
     display: inline-block;
     text-align: center;
     width: 100%;
     height: fit-content;
-    margin-top: 80px;
+    margin-top: 2rem;
     margin-bottom: 2px;
     color: #E4E5EA;
     font-size: 40px;
 }
 .slide-bar-contact{
-    margin: 1px auto;
-    margin-bottom: 60px;
-    width: 6%;
-    border-bottom: 3px solid #ccd1e0;
+    margin: 3px auto;
+    margin-bottom: 30px;
+    width: 10%;
+    border-bottom: 3px solid #153EC5;
 }
-
+/* == FORM == */
 .container-contact{
     display: flex;
     justify-content: center;
@@ -217,29 +221,105 @@ nav{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
+    color: #E4E5EA;
     width: 90%;
-    border: 1px solid rgb(128, 0, 0)
-}
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    color: #153EC5;
 }
 form{
     display: flex;
     flex-direction: column;
-    color: #153EC5;
+}
+form input{
+    margin-top: 0.5rem;
+    color: #E4E5EA;
+    transition: all .2s ease;
+}
+form input:hover{
+    box-shadow: 0 0 25px #1a63b6;
+}
+form textarea:hover{
+    box-shadow: 0 0 25px #1a63b6;
+}
+form #name{
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #1a63b6;
+    border-radius: 10px;
+    background-color: #1E242C;
+}
+form #email{
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #1a63b6;
+    border-radius: 10px;
+    background-color: #1E242C;
+}
+form textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 2px solid #1a63b6;
+    border-radius: 10px;
+    background-color: #1E242C;
+    color: #E4E5EA;
+    resize: none;
+}
+form #contact-submit{
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid #1a63b6;
+    border-radius: 10px;
+    background-color: #252934;
+    transition: 0.3s;
+}
+form #contact-submit:hover{
+    cursor: pointer;
+    background-color: #5b81eb;
+}
+
+/* == FOOTER ==*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1B242F;
+}
+.container-footer{
+    display: flex;
+    align-items: center;
 }
 .social{
-    color: white;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem;
+    border: 1px solid #1a63b6;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+.social:hover{
+    box-shadow: 0 0 25px #1a63b6;
+    background-color: #5b81eb;
+}
+.social a{
+    text-decoration: none;
+    color: #E4E5EA;
+}
+.container-footer p{
+    color: #E4E5EA;
+    font-weight: bold;
+    padding: 1rem;
 }
 /* RESPONSIVE */
 @media screen and (max-width:768px){
     .container-profile{
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto 0px auto;
-    width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto 0px auto;
+        width: 90%;
     }
     .container{
         display: flex;
