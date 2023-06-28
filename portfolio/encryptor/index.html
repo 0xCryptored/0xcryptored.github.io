@@ -5,19 +5,19 @@
         <title onclick="secret()">Encryptor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
         <link rel='stylesheet' href="styles.css">
         <script src="myscript.js"></script>
-        <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <h1 id="capi">Cryptored Labs</h1>
-            <div id="alert"><p>Here the alert will display</p></div>
+            <h1 id="capi">Crypto Encryptor</h1>
+            <div id="alert">Here the alert will display</div>
         </header>
-        <section id="Encryptor">
+        <section id="encryptor">
             <div class="container-input">
                 <textarea id="input-text" name="input-text" placeholder="Ingresa Texto Aqui!" rows="10" cols="50"></textarea>
-                <div class="buttonSpace">
+                <div class="buttons_container">
                     <button class="buttons encriptado" type="button">
                         Encriptar
                     </button>
@@ -26,23 +26,19 @@
                     </button>
                 </div>
             </div>
-
             <div class="container-output">
                 <textarea id="output-text" name="output-text" rows="14" cols="21" placeholder="Aun no hay Resultado, Ingresa un texto!"readonly></textarea>
-                <img class="pet" src="https://www.hellabrunn.de/fileadmin/_processed_/c/f/csm_tierpark-hellabrunn-wasserschwein-capybara-amerika-tierlexikon-artenschutz_7c6c6695e6.png">
-                <div>
-                    <button class="copyButton">
-                        <span class="fa-solid fa-copy"></span><span style="margin-left:8px;">Copiar</span>
-                    </button>
-                </div>
+                <button class="copyButton">
+                    <span>Copiar</span>
+                </button>
             </div>
         </section>
         <footer>
-            <div class="credits">
-                <p>
-                    Copyright &#169 Cryptored Labs. All Rights Reserved.
-                    <span> <img src="https://preview.redd.it/6c6r9mzxc9a51.gif?format=png8&s=befc74ea400dd3212305044f9589ef34129da9f8" width="50px"></span>
-                </p>
+            <div class="container-footer">
+                <div class="social"><a href="https://github.com/0xCryptored"><i class="fa-brands fa-github"></i></a></div>
+                <div class="social"><a href="https://www.linkedin.com/in/alangduran/"><i class="fa-brands fa-linkedin"></i></a></div>
+                <p> ALAN DURAN &#169;2023</p>
+                <img src="https://www.google.com/search/static/gs/animal/cover_images/m01zh5_cover.png" style="width: 8rem;">
             </div>
         </footer>
     </body>

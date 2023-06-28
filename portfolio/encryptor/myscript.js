@@ -72,7 +72,7 @@ const output = document.getElementById('output-text');
   function alert(message, delay) {
     var alert = document.getElementById("alert");
     alert.innerHTML = message;
-    alert.style.display = "inline-block";
+    alert.style.display = "flex";
     setTimeout(function(){
       alert.style.display = "none";
     }, delay);

@@ -8,248 +8,155 @@ Rosa Salsa rgb(237, 197, 171) / #EDC5AB
 */
 
 body{
-    background: #64BAAD ;
+    background: #64BAAD;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 header h1{
-    display: inline-block;
-    width: 340px;
-    position: relative;
-    margin-left: 55px;
-    font-size: 45px;
-    transition: color 1s;
-}
-#alert{
-    display: none;
-    position: relative;
-    top: 18px;
-    width: 500px;
-    height: 50px;
-    border-radius: 45px;
-    font-size: 30px;
-    font-weight: bolder;
-}
-#alert p{
-    position: relative;
-    left: 110px;
-    bottom: 11px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    box-sizing: border-box;
-    padding-bottom: 20px;
+    font-size: 50px;
+    transition: color 1s;
 }
 header h1:hover{
     color: #D74250;
 }
-footer{
-    display:inline-block;
-    position: absolute;
-    margin-top: 50px;
-    left: 0px;
-    background-image: linear-gradient(#64BAAD, #000708, #000000);
-    width: 100%;
-    height: 110px;
+#alert{
+    display: none;
+    justify-content: center;
+    color: #D74250;
+    font-size: 30px;
+    font-weight: bolder;
 }
 #encryptor{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    justify-content: space-between;
+    padding: 2rem;
 }
 /* Seccion de Input */
 .container-input {
-    display:inline-block;
-    position: relative;
-    margin: auto 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 45%;
-    height: 500px;
+    height: 25rem;
+    padding: 1rem;
     background: #B6663F;
     box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
     border-radius: 32px;
-    left:200
 }
 #input-text{
-    display: block;
-    position: relative;
-    top: 30px;
+    display: flex;
     width: 80%;
     margin: auto;
+    padding: 0.5em;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
     background-color:#B6663F;
     color:#f9fc63;
-    resize: none;
     border: none;
+    resize: none;
     outline: none; 
-    
 }
 ::placeholder { 
     color: #f9fc63;
     opacity: 1;
-  }
-.buttons{
-    display: inline-block;
-    position: relative;
-    margin: auto 20px ;
-    width: 130px;
-    height: 50px;
-    border-radius: 10px;
-    top: 100px;
-    left: 150px;
-    font-weight: bold;
-    font-size: 15px;
 }
-.copyButton{
-    display: block;
-    position: absolute;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    top: 87%;
-    left: 40%;
-    border-radius: 10px;
+.buttons_container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+.buttons{
+    margin: auto;
+    width: 8em;
+    padding: 1em;
+    border-radius: 30px;
     font-weight: bold;
     font-size: 15px;
 }
 
 /* Seccion de Output */
 .container-output {
-    display: inline-block;
-    position: relative;
-    top: 73px;
-    margin: auto 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 45%;
-    height: 500px;
+    height: 25rem;
+    padding: 1rem;
     background: #B6663F;
     box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
     border-radius: 32px;
-    left: 90px;
-}
-.container-output img{
-    left: 200px;
 }
 #output-text{
-    display: inline-block;
-    position: relative;
-    margin: 15px;
-    top:10px;
-    font-size: 25px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 28px;
     font-weight: bold;
     background-color:#B6663F;
     color:#f9fc63;
     border: none;
-    outline: none; 
     resize: none;
+    outline: none; 
 }
-.pet{
-    display:inline-block;
-    position: absolute;
-    right: 9px;
-    top: 70px;
+.container-output div{
+    display: flex;
+}
+.container-output img{
+    width: 5.2rem;
+    border: 1px solid green;
+}
+.copyButton{
+    margin: auto;
+    width: 8em;
+    padding: 1em;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-image: linear-gradient(#64BAAD, #000708, #000000);
+}
+.container-footer{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+.social{
+    font-size: 2.5rem;
+    justify-content: center;
+    padding: 0.2rem 0.5rem;
+    margin: 1rem;
     border-radius: 10px;
+    transition: all .2s ease;
 }
-.credits{
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    left: 40%;
-    vertical-align: middle;
-    color: white;
-    font-size: 18px;
+.social:hover{
+    box-shadow: 0 0 25px #1a63b6;
+    background-color: #5b81eb;
 }
-.credits span{
-    display: inline-block;
-    position: relative;
-    top:15px;
-    left: 40px;
-    align-items:center;
+.social a{
+    text-decoration: none;
+    color: #E4E5EA;
+}
+.container-footer p{
+    color: #E4E5EA;
+    font-weight: bold;
+    padding: 1rem;
 }
   /*=================================================================*/
- /*== For screens with a maximum width of 767px (mobile devices) ==*/
+  /*== For screens with a maximum width of 767px (mobile devices) ==*/
 /*===============================================================*/
-@media only screen and (max-width: 1000px) {
-
-header h1 {
-width: 100%;
-font-size: 60px;
-text-align: center;
-}
-#alert {
-display: none;
-margin: 0 auto;
-width: 100%;
-height: auto;
-font-size: 40px;
-text-align: center;
-}
-#alert p {
-display: block;
-left: 75px;
-}
-footer {
-display: block;
-position: absolute;
-width: 109%;
-height: 150px;
-}
-.container-input{
-display: block;
-position: relative;
-width: 100%;
-left: 40px;
-height: auto;
-margin: 0px auto;
-}
-#input-text {
-top: 10px;
-font-size: 22px;
-margin-bottom: 20px;
-}
-.buttons {
-display: inline-block;
-position: relative;
-margin: 10px 10px;
-top: 0px;
-left: 200px;
-width: 25%;
-text-align: center;
-}
-.container-output{
-display: inline-block;
-position: relative;
-width: 100%;
-left: 40px;
-top:10px;
-height: auto;
-margin: 10px auto;
-}
-.copyButton {
-top: auto;
-bottom: 10px;
-left: 84%;
-transform: translateX(-50%);
-width: 23%;
-font-size: 18px;
-}
-#output-text {
-left: 20px;
-width: 70%;
-margin: 10px;
-font-size: 20px;
-}
-.pet {
-display: inline-block;
-width: 180px;
-top: 40px;
-right: 40px;
-}
-.credits {
-text-align: center;
-font-size: 16px;
-top: 40px;
-left: 300px;
-}
-.credits span {
-display: inline-block;
-margin-top: 10px;
-}
-}
