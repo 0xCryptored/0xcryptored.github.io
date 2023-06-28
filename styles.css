@@ -87,7 +87,7 @@ nav{
 }
 /* === CONTENT ABOUT === */
 #about{
-    background-color: #E4E5EA;
+    background-color: #8ca6b2ed;
 }
 .title{
     display: inline-block;
@@ -176,7 +176,7 @@ nav{
 #projects{
     margin-top: 0px;
     padding-bottom: 5rem;
-    background-color: #c6c6c9;
+    background-image: linear-gradient(#8ca6b2ed, #252934)
 }
 .container-projects{
     display: flex;
