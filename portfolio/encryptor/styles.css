@@ -182,7 +182,6 @@ footer{
         flex-direction: column;
         padding: 1rem;
         background: #64BAAD;
-        border: 1px solid red;
     }
     .container-input {
         display: flex;
