@@ -1,11 +1,8 @@
-/* to help me remember the values and keep armony along the different pages.
-COLOR PALETTE:
-    GRIS: #c6c6c9 
-    BLANCO: #E4E5EA 
-    NEGRO: #252934
-    AZUL: #6B99C3 
-    STRONG BLUE: #153EC5 
-*/
+:root{
+    --main-white: #E4E5EA;
+    --main-blue: #153EC5; 
+    --main-gray: #c6c6c9; 
+}
 
 body{
     background-color: #121212;
@@ -23,60 +20,55 @@ header{
 }
 header h1{
     width: 100%;
-    color: #E4E5EA;
+    color: var(--main-white);
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 3.5rem;
 }
 header h1 span{
     color: rgb(19, 74, 255);
 }
-header button{
+header a{
     display: block;
     margin: auto;
     width: fit-content;
     padding: 1rem;
     font-family: 'Lobster', cursive;
-    font-size: 1.5vw;
-    color: #E4E5EA;
-    border: 2.5px solid #E4E5EA;
+    font-size: 1.5rem;
+    color: var(--main-white);
+    border: 2.5px solid var(--main-white);
     border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
     transition-duration: 0.5s;
 }
-header button:hover{
+header a:hover{
     color: #121212;
     background-color: white;
 }
 /* NAVBAR */
 nav{
     display: sticky;
+    justify-content: center;
     height: fit-content;
-    background-color: #16354D;
+    background-color: #233746;
     border-bottom: 5px solid #153EC5;
 }
-.container-nav{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
 .list-nav{
+    justify-content: center;
+    margin: auto;
     width: fit-content;
-    color: #E4E5EA;
+    color: var(--main-white);
 }
 .list-nav li{
     display: inline-block;
     margin: auto 1rem;
-    font-size: 1.5rem;
     padding: 0.3rem;
-    transition-duration: 0.7s;
-    border-radius: 20px;
+    font-size: 1.7rem;
+    text-shadow: 0 0 5px #153EC5;
+    transition-duration: 0.5s;
 }
 .list-nav li:hover{
-    background-color:rgb(31, 4, 94)
+    text-shadow: 10px 5px 1px #153EC5, 0px 0px 5px #0c0000;
 }
 .list-nav a{
     text-decoration: none;
@@ -94,8 +86,8 @@ nav{
     height: fit-content;
     margin-top: 8rem;
     margin-bottom: 1rem;
-    color: #a8d1f8;
-    text-shadow: 5px 5px 5px #07052c;
+    color: var(--main-white);
+    text-shadow: 5px 5px 5px var(--main-blue);
     font-size: 3em;
 }
 .slide-bar {
@@ -109,8 +101,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5rem auto;
     width: 90%;
 }
 .card{
@@ -123,23 +114,44 @@ nav{
 }
 .card li{
     word-wrap: break-word;
+    color: var(--main-white);
     font-size: 18px;
 }
 .img-about{
-    width: 100px;
-    height: auto;
+    width: 8rem;
 }
 /* === PROFILE === */
 .container-profile{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     margin: 50px auto 0px auto;
     width: 90%;
 }
+.me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 100px;
+}
 .img-pfp{
-    width: 280px;
-    height: auto;
+    width: 18rem;
+}
+.me h3{
+    margin: auto;
+    color: var(--main-white);
+    font-size: 2rem;
+    text-shadow: 0 0 10px #121212;
+}
+.me p{
+    font-size: 1.4rem;
+    color: var(--main-white);
+    text-shadow: 0 0 10px #121212;
+}
+.me a{
+    text-decoration: none;
+    color: var(--main-white);
+    text-shadow: 0 0 10px #1b44f7;
 }
 .img-skill{
     position: relative;
@@ -148,27 +160,6 @@ nav{
     right: 60px;
     height: auto;
     margin: auto;
-}
-.me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px 100px;
-}
-.me h3{
-    margin-top: 0px;
-    color: #45474d;
-    font-size: 25px;
-}
-.me p{
-    position: relative;
-    bottom: 30px;
-    font-size: 20px;
-}
-.me a{
-    text-decoration: none;
 }
 
 /* === CONTENT PORTFOLIO === */
@@ -203,7 +194,7 @@ nav{
     height: fit-content;
     margin-top: 2rem;
     margin-bottom: 2px;
-    color: #E4E5EA;
+    color: var(--main-white);
     font-size: 40px;
 }
 .slide-bar-contact{
@@ -221,7 +212,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-    color: #E4E5EA;
+    color: var(--main-white);
     width: 90%;
 }
 form{
@@ -230,7 +221,7 @@ form{
 }
 form input{
     margin-top: 0.5rem;
-    color: #E4E5EA;
+    color: var(--main-white);
     transition: all .2s ease;
 }
 form input:hover{
@@ -262,20 +253,20 @@ form textarea{
     border: 2px solid #1a63b6;
     border-radius: 10px;
     background-color: #1E242C;
-    color: #E4E5EA;
+    color: var(--main-white);
     resize: none;
 }
-form #contact-submit{
+#contact-submit{
     width: 6rem;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.5rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    padding: 0.4rem;
     border: 2px solid #1a63b6;
     border-radius: 10px;
     background-color: #252934;
     transition: 0.3s;
 }
-form #contact-submit:hover{
+#contact-submit:hover{
     cursor: pointer;
     background-color: #5b81eb;
 }
@@ -305,15 +296,22 @@ footer{
 }
 .social a{
     text-decoration: none;
-    color: #E4E5EA;
+    color: var(--main-white);
 }
 .container-footer p{
-    color: #E4E5EA;
-    font-weight: bold;
+    color: var(--main-white);
     padding: 1rem;
 }
 /* RESPONSIVE */
 @media screen and (max-width:768px){
+    .list-nav li{
+        display: inline-block;
+        margin: auto 1rem;
+        padding: 0.3rem;
+        font-size: 1.4rem;
+        text-shadow: 0 0 5px #153EC5;
+        transition-duration: 0.5s;
+    }
     .container-profile{
         display: flex;
         flex-direction: column;
@@ -330,8 +328,7 @@ footer{
         width: 90%;
     }
     .card{
-        width: auto;
-        
+        width: fit-content;
     }
     .container-projects{
         display: flex;
