@@ -9,6 +9,7 @@ COLOR PALETTE:
 
 body{
     background-color: #121212;
+    font-family: 'Lobster', cursive;
     margin: 0;
     padding: 0;
 } 
@@ -17,18 +18,14 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0.5em;
     margin: 12rem auto 12rem auto;
-
 }
 header h1{
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
     width: 100%;
     color: #E4E5EA;
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 3.5vw;
 }
 header h1 span{
     color: rgb(19, 74, 255);
@@ -38,10 +35,11 @@ header button{
     margin: auto;
     width: fit-content;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5vw;
     color: #E4E5EA;
     border: 2.5px solid #E4E5EA;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -85,9 +83,9 @@ nav{
     color: inherit; 
     cursor: pointer;
 }
-/* === CONTENT ABOUT === */
+/* === CONTENT ABOUT === 28375fed */
 #about{
-    background-color: #8ca6b2ed;
+    background-color: #586083ed;
 }
 .title{
     display: inline-block;
@@ -96,7 +94,8 @@ nav{
     height: fit-content;
     margin-top: 8rem;
     margin-bottom: 1rem;
-    color: #121212;
+    color: #a8d1f8;
+    text-shadow: 5px 5px 5px #07052c;
     font-size: 3em;
 }
 .slide-bar {
@@ -176,7 +175,7 @@ nav{
 #projects{
     margin-top: 0px;
     padding-bottom: 5rem;
-    background-image: linear-gradient(#8ca6b2ed, #252934)
+    background-image: linear-gradient(#586083ed, #252934)
 }
 .container-projects{
     display: flex;
