@@ -1,7 +1,10 @@
 :root{
     --main-white: #E4E5EA;
     --main-blue: #153EC5; 
-    --main-gray: #c6c6c9; 
+    --main-poppy: #df2935;
+    --main-gray: #747572;
+    --main-border: #574b4b;
+    --main-black: #121212;
 }
 
 body{
@@ -50,8 +53,8 @@ nav{
     display: sticky;
     justify-content: center;
     height: fit-content;
-    background-color: #233746;
-    border-bottom: 5px solid #153EC5;
+    background-color: var(--main-gray);
+    border-bottom: 7px solid var(--main-border); 
 }
 .list-nav{
     justify-content: center;
@@ -68,7 +71,7 @@ nav{
     transition-duration: 0.5s;
 }
 .list-nav li:hover{
-    text-shadow: 10px 5px 1px #153EC5, 0px 0px 5px #0c0000;
+    text-shadow: 7px 5px 1px var(--main-poppy), 0px 0px 5px #0c0000;
 }
 .list-nav a{
     text-decoration: none;
@@ -77,7 +80,7 @@ nav{
 }
 /* === CONTENT ABOUT === 28375fed */
 #about{
-    background-color: #586083ed;
+    background-color: var(--main-poppy);
 }
 .title{
     display: inline-block;
@@ -88,13 +91,13 @@ nav{
     margin-bottom: 1rem;
     color: var(--main-white);
     text-shadow: 5px 5px 5px var(--main-blue);
-    font-size: 3em;
+    font-size: 3.5em;
 }
 .slide-bar {
     margin: 1px auto;
     margin-bottom: 60px;
     width: 10%;
-    border-bottom: 3px solid #153EC5;
+    border-bottom: 3px solid var(--main-blue);
 }
   /* === CARDS === */
 .container{
@@ -136,12 +139,14 @@ nav{
 }
 .img-pfp{
     width: 18rem;
+    border-radius: 50px;
+    box-shadow: 1px 1px 50px var(--main-white);
 }
 .me h3{
-    margin: auto;
+    margin: 5px auto;
     color: var(--main-white);
     font-size: 2rem;
-    text-shadow: 0 0 10px #121212;
+    text-shadow: 0 0 10px var(--main-black);
 }
 .me p{
     font-size: 1.4rem;
@@ -151,7 +156,7 @@ nav{
 .me a{
     text-decoration: none;
     color: var(--main-white);
-    text-shadow: 0 0 10px #1b44f7;
+    text-shadow: 0 0 10px var(--main-black);
 }
 .img-skill{
     position: relative;
@@ -166,13 +171,12 @@ nav{
 #projects{
     margin-top: 0px;
     padding-bottom: 5rem;
-    background-image: linear-gradient(#586083ed, #252934)
+    background-image: linear-gradient(var(--main-poppy), #252934)
 }
 .container-projects{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -180,7 +184,9 @@ nav{
 }
 .procard{
     display: flex;
-    border: 1px solid rgb(0, 128, 0)
+}
+.procard img{
+    border-radius: 20px;
 }
 /* === CONTENT CONTACT === */
 #contact{
