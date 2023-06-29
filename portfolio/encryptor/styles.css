@@ -14,6 +14,7 @@ body{
 }
 header{
     display: flex;
+    font-family: 'Nova Oval', cursive;
     justify-content: center;
     flex-direction: column;
     background: #64BAAD;
@@ -22,7 +23,9 @@ header h1{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    color: #E4E5EA;
+    font-size: 4vw;
+    text-shadow: 5px 5px 5px #ababab;
     transition: color 0.5s;
 }
 header h1:hover{
@@ -32,13 +35,14 @@ header h1:hover{
     display: none;
     justify-content: center;
     color: #D74250;
+    font-family: 'Nova Oval', cursive;
     font-size: 30px;
     font-weight: bolder;
 }
 #encryptor{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     background: #64BAAD;
 }
 /* Seccion de Input */
@@ -59,7 +63,8 @@ header h1:hover{
     margin: auto;
     padding: 0.5em;
     text-align: center;
-    font-size: 28px;
+    font-family: 'Nova Oval', cursive;
+    font-size: 3vw;
     font-weight: bold;
     background-color:#B6663F;
     color:#f9fc63;
@@ -82,8 +87,9 @@ header h1:hover{
     width: 8em;
     padding: 1em;
     border-radius: 30px;
-    font-weight: bold;
-    font-size: 15px;
+    font-family: 'Nova Oval', cursive;
+    font-weight: 900;
+    font-size: 1.2vw;
 }
 
 /* Seccion de Output */
@@ -104,7 +110,8 @@ header h1:hover{
     margin: auto;
     padding: 0.5em;
     text-align: center;
-    font-size: 28px;
+    font-family: 'Nova Oval', cursive;
+    font-size: 3vw;
     font-weight: bold;
     background-color:#B6663F;
     color:#f9fc63;
@@ -124,12 +131,14 @@ header h1:hover{
     width: 8em;
     padding: 1em;
     border-radius: 30px;
-    font-weight: bold;
-    font-size: 15px;
+    font-family: 'Nova Oval', cursive;
+    font-weight: 900;
+    font-size: 1.2vw;
 }
 footer{
     display:flex;
     justify-content: center;
+    font-family: 'Nova Oval', cursive;
     background-image: linear-gradient(#64BAAD, #121212, #121212);
 }
 .container-footer{
@@ -159,11 +168,19 @@ footer{
     padding: 1rem;
 }
 @media screen and (max-width:768px){
+    header h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #E4E5EA;
+        font-size: 8vw;
+        text-shadow: 5px 5px 5px #ababab;
+        transition: color 0.5s;
+    }
     #encryptor{
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
-        padding: 2rem;
+        padding: 1rem;
         background: #64BAAD;
         border: 1px solid red;
     }
@@ -172,51 +189,23 @@ footer{
         flex-direction: column;
         justify-content: center;
         margin: 0.5rem auto;
-        width: 70%;
-        height: 20rem;
+        width: 60%;
+        height: 13rem;
         padding: 1rem;
         background: #B6663F;
         box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
         border-radius: 32px;
-    }
-    #input-text{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        padding: 0.5em;
-        text-align: center;
-        font-size: 22px;
-        font-weight: bold;
-        background-color:#B6663F;
-        color:#f9fc63;
-        border: none;
-        resize: none;
-        outline: none; 
     }
     .container-output {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0.5rem auto;
-        width: 70%;
-        height: 20rem;
+        width: 60%;
+        height: 13rem;
         padding: 1rem;
         background: #B6663F;
         box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
         border-radius: 32px;
-    }
-    #output-text{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        padding: 0.5em;
-        text-align: center;
-        font-size: 22px;
-        font-weight: bold;
-        background-color:#B6663F;
-        color:#f9fc63;
-        border: none;
-        resize: none;
-        outline: none; 
     }
 }
