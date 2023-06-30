@@ -3,14 +3,15 @@
     <head id="#home">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, width=device-width">
-        <link href="styles.css" rel="stylesheet">
+        <link href="static\styles.css" rel="stylesheet">
+        <link href="static\styleshuffle.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
         <title>Cryptored Labs</title>
     </head>
     <body>          
         <header id="home">
-            <h1> Hello world, I'm <span>Alan Duran</span><br>I'm a front-end web developer. </h1>
+            <h1> Hello world, I'm <span>Alan Duran</span><br>I'm a front-end web developer.</h1>
             <a href="#projects"> Check out my work -></a>
         </header>
         <nav>
@@ -57,7 +58,7 @@
             <!--Profile-->
             <div class="container-profile">
                 <div class="me">
-                    <img src="img\5.svg" alt="picture of Alan" class="img-pfp"> 
+                    <img src="img\5.svg" alt="picture of the dev" class="img-pfp"> 
                     <h3>Who is this guy?</h3>
                     <p>
                         I'm a Front-End Developer in Cali, Colombia.
@@ -66,7 +67,38 @@
                     </p>
                 </div>
                 <div class="me">
-                    <img src="img\skills.png" alt="skills percentage" class="img-skill"> 
+                    <div class="container-grid">
+                        <div class="skill-card">
+                            <img src="img\html.svg">
+                            <h3>HTML</h3>
+                            <p>High-Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="img\css.svg">
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="img\js.svg">
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="img\python.svg">
+                            <h3>Python</h3>
+                            <p>Advanced</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="img\c.svg">
+                            <h3>C</h3>
+                            <p>High-Intermediate</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="img\git.svg">
+                            <h3>Git</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,13 +107,16 @@
             <div class="slide-bar"></div>
             <div class="container-projects">
                 <div class="procard">
-                    <a href="portfolio\encryptor\index.html"><img src="img\encryptor1.svg" style="width: 300px;"></a>
+                    <a href="portfolio\encryptor\index.html"><img src="img\encryptor.svg" style="width: 300px;"></a>
                 </div>
                 <div class="procard">
-                    <img src="img\placeholder 480x288.png">
+                    <img src="img\0xsuite.svg" style="width: 300px;">
                 </div>
                 <div class="procard">
-                    <img src="img\placeholder 480x288.png">
+                    <img src="img\yumbudget.svg" style="width: 300px;">
+                </div>
+                <div class="procard">
+                    <img src="img\pawlink.svg" style="width: 300px;">
                 </div>
             </div>
         </section>
@@ -105,5 +140,8 @@
                 <p> ALAN DURAN &#169;2023</p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
+        <script src="home.js"></script>
     </body>
 </html>
